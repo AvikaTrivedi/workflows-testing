@@ -3,10 +3,10 @@ tar xf MacPorts-2.7.1.tar.bz2
 cd MacPorts-2.7.1/
 ./configure
 make
-sudo make install
+make install
 cd ..
-sudo port install ffmpeg
-sudo port install neofetch
+port install ffmpeg
+port install neofetch
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew upgrade
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
