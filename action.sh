@@ -12,8 +12,9 @@ cp SedLoif/.env Ultroid/.env
 chmod 777 Ultroid
 cd Ultroid
 chmod +x startup
-pip3 install --no-cache-dir -r requirements.txt 
-pip3 install --no-cache-dir -r res*/sta*/opt*.txt
+pip3 install -r requirements.txt 
+pip3 install -r resources/startup/optional-requirements.txt
 pip3 install yt_dlp -U
+pip3 install aiohttp -U
 pip3 install av --no-binary av
 sh startup
