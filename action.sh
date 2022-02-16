@@ -1,4 +1,4 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo brew update && sudo brew upgrade
 sudo brew install git
 sudo brew install ffmpeg
