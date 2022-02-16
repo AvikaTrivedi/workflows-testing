@@ -1,7 +1,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo chown -R `whoami` /usr/local/Homebrew/
+sudo chown -R $(whoami) $(brew --prefix)/*
+sudo mkdir /usr/local/Frameworks
+sudo chown -R `whoami` /usr/local/Frameworks/
 brew update && brew upgrade
-brew install pyenv
-pyenv install 3.9.2
 brew install git
 brew install ffmpeg
 brew install neofetch
