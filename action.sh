@@ -1,14 +1,9 @@
-curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.7.1.tar.bz2
-tar xf MacPorts-2.7.1.tar.bz2
-cd MacPorts-2.7.1/
-./configure
-make
-make install
-cd ..
-port install ffmpeg
-port install neofetch
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+sudo chown $USER /usr/local/bin/brew
 brew update && brew upgrade
+brew install neofetch
+brew install ffmpeg
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 git clone -b dev https://github.com/TeamUltroid/Ultroid 
