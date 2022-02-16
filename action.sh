@@ -11,10 +11,10 @@ sudo port install neofetch
 brew update && brew upgrade
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
-git clone -b dev https://github.com/TeamUltroid/Ultroid /root/Ultroid
-cp SedLoif/.env /root/Ultroid/.env
-chmod 777 /root/Ultroid
-cd /root/Ultroid
+git clone -b dev https://github.com/TeamUltroid/Ultroid 
+cp SedLoif/.env Ultroid/.env
+chmod 777 Ultroid
+cd Ultroid
 chmod +x startup
 pip3 install -r requirements.txt 
 pip3 install -r resources/startup/optional-requirements.txt
