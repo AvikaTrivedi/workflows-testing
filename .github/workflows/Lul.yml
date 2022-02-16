@@ -8,7 +8,7 @@ on:
     
 jobs:
   build:
-    runs-on: kali-20.04
+    runs-on: macos-11
 
     steps:
        - name: Checkout
