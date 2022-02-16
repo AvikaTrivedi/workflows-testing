@@ -1,8 +1,8 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-sudo brew update && sudo brew upgrade
-sudo brew install git
-sudo brew install ffmpeg
-sudo brew install neofetch
+brew update && sudo brew upgrade
+brew install git
+brew install ffmpeg
+brew install neofetch
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 git clone -b dev https://github.com/TeamUltroid/Ultroid 
