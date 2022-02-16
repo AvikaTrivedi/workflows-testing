@@ -1,4 +1,5 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update && brew upgrade
 brew install pyenv
 pyenv install 3.9.2
 brew install git
@@ -14,7 +15,7 @@ cd Ultroid
 chmod +x startup
 pip3 install -r requirements.txt 
 pip3 install -r resources/startup/optional-requirements.txt
-pip3 install yt_dlp -U
+pip3 install yt-dlp -U
 pip3 install aiohttp -U
 pip3 install av --no-binary av
 sh startup
