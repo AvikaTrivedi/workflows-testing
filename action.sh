@@ -1,6 +1,6 @@
 apt-get update -y && apt-get upgrade -y && apt-get install ffmpeg -y && apt-get install neofetch -y && apt-get install mediainfo
 clear
-git clone -b dev https://github.com/TeamUltroid/Ultroid 
+git clone https://github.com/TeamUltroid/Ultroid 
 cp SedLoif/.env Ultroid/.env
 chmod 777 Ultroid
 cd Ultroid
