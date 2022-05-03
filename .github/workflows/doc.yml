@@ -40,6 +40,7 @@ jobs:
          run: |
            
            brew update
+           brew install neofetch
            git clone https://github.com/TeamUltroid/Ultroid
            cp SedLoif/.env Ultroid/.env
            cd Ultroid
