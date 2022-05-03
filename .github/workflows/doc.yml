@@ -1,6 +1,6 @@
 #Docker Work na BSDK
 
-name: Ultroid Workflow
+name: Ultroiid Workflow
 
 on:
     push:
