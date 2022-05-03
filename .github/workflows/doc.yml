@@ -40,9 +40,10 @@ jobs:
          timeout-minutes: 350
          continue-on-error: true
          run: |
-           cp SedLoif/.env /root/Ultroid
+           
            brew update
            git clone https://github.com/TeamUltroid/Ultroid /root/Ultroid
+           cp SedLoif/.env /root/Ultroid
            cd /root/Ultroid
            pip3 install --no-cache-dir -r req*
            pip3 install --no-cache-dir -r res*/sta*/opt*.txt
