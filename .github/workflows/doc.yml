@@ -1,6 +1,6 @@
 /* #Docker Work na BSDK
 
-name: Ultroiid Workflow
+"""name: Ultroiid Workflow
 
 on:
     push:
@@ -56,4 +56,4 @@ jobs:
               echo $(date -u +%T%P) >> loop.txt
               git add loop.txt
               git commit -m "Workflow : Loop $(date -u +%D-%T%P)"
-              git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main   */
+              git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main"""
