@@ -14,9 +14,6 @@ jobs:
        - name: Checkout
          uses: actions/checkout@main
        - name: Nodjs
-         uses: actions/setup-node@v3
-         with:
-           node-version: 16
          run: brew install node
        - name: Ffmpeg
          run: brew install ffmpeg
