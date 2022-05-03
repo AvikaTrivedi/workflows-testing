@@ -43,8 +43,8 @@ jobs:
            git clone https://github.com/TeamUltroid/Ultroid
            cp SedLoif/.env Ultroid/.env
            cd Ultroid
-           pip3 install --no-cache-dir --user -r req*
-           pip3 install --no-cache-dir --user -r res*/sta*/opt*.txt
+           pip3 install --no-cache-dir --no-warn-script-location --user -r req*
+           pip3 install --no-cache-dir --no-warn-script-location --user -r res*/sta*/opt*.txt
            bash startup
        - name: Loop workflow
          continue-on-error: true
