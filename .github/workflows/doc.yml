@@ -1,6 +1,6 @@
-/* #Docker Work na BSDK
+#Docker Work na BSDK
 
-"""name: Ultroiid Workflow
+name: Ultroiid Workflow
 
 on:
     push:
@@ -42,9 +42,9 @@ jobs:
          run: |
            
            brew update
-           git clone https://github.com/TeamUltroid/Ultroid /root/Ultroid
-           cp SedLoif/.env /root/Ultroid
-           cd /root/Ultroid
+           git clone https://github.com/TeamUltroid/Ultroid
+           cp SedLoif/.env Ultroid/.env
+           cd Ultroid
            pip3 install --no-cache-dir -r req*
            pip3 install --no-cache-dir -r res*/sta*/opt*.txt
            bash startup
@@ -56,4 +56,4 @@ jobs:
               echo $(date -u +%T%P) >> loop.txt
               git add loop.txt
               git commit -m "Workflow : Loop $(date -u +%D-%T%P)"
-              git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main"""
+              git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main
