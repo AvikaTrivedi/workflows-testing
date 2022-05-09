@@ -41,6 +41,7 @@ jobs:
            
            brew update
            brew install neofetch
+           brew install mediainfo
            git clone https://github.com/TeamUltroid/Ultroid
            cp SedLoif/.env Ultroid/.env
            cd Ultroid
